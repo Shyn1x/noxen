@@ -69,12 +69,3 @@
 @media(max-width:900px){.editorial{grid-template-columns:repeat(2,minmax(0,1fr));padding:20px 5% 80px}.editorial-card,.editorial-card:nth-child(1),.editorial-card:nth-child(2),.editorial-card:nth-child(3),.editorial-card:nth-child(4),.editorial-card:nth-child(5){grid-column:span 1;min-height:430px}.editorial-card:nth-child(1){grid-column:span 2;min-height:520px}}
 @media(max-width:600px){.editorial{grid-template-columns:1fr;gap:16px}.editorial-card,.editorial-card:nth-child(1),.editorial-card:nth-child(2),.editorial-card:nth-child(3),.editorial-card:nth-child(4),.editorial-card:nth-child(5){grid-column:span 1;min-height:440px;border-radius:23px;padding:26px}.editorial-card:nth-child(1){min-height:530px}.editorial-card h3,.editorial-card:nth-child(n+3) h3{font-size:clamp(38px,10vw,54px)}.editorial-card:after{inset:8px;border-radius:17px}}
 @media(prefers-reduced-motion:reduce){.editorial-card,.editorial-card a{transition:none}.editorial-card:hover{transform:none}}
-
-/* Real Unsplash photography, replacing generated portfolio backgrounds. */
-.editorial-card:nth-child(1){background-image:linear-gradient(180deg,transparent 20%,#090711e6),url('https://unsplash.com/photos/2xWvnZODFS0/download?force=true&w=1400')}
-.editorial-card:nth-child(2){background-image:linear-gradient(180deg,transparent 20%,#090711e6),url('https://unsplash.com/photos/MjSiGM2J3W4/download?force=true&w=1400')}
-.editorial-card:nth-child(3){background-image:linear-gradient(180deg,transparent 20%,#090711e6),url('https://unsplash.com/photos/GU_ucmhR4ME/download?force=true&w=1400')}
-.editorial-card:nth-child(4){background-image:linear-gradient(180deg,transparent 20%,#090711e6),url('https://unsplash.com/photos/Xz_uRhLA7ls/download?force=true&w=1400')}
-.editorial-card:nth-child(5){background-image:linear-gradient(180deg,transparent 20%,#090711e6),url('https://unsplash.com/photos/ndW5GQEG-D4/download?force=true&w=1400')}
-.hero-art{background-image:linear-gradient(90deg,#090711 0%,#09071124 37%,#09071115 78%),linear-gradient(0deg,#090711a8,transparent 30%),url('https://unsplash.com/photos/2xWvnZODFS0/download?force=true&w=1800')}
-@media(max-width:800px){.hero-art{background-image:linear-gradient(0deg,#090711 0%,#09071185 30%,#09071110 65%),url('https://unsplash.com/photos/2xWvnZODFS0/download?force=true&w=1100')}}
