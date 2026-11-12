@@ -69,3 +69,15 @@
 @media(max-width:900px){.editorial{grid-template-columns:repeat(2,minmax(0,1fr));padding:20px 5% 80px}.editorial-card,.editorial-card:nth-child(1),.editorial-card:nth-child(2),.editorial-card:nth-child(3),.editorial-card:nth-child(4),.editorial-card:nth-child(5){grid-column:span 1;min-height:430px}.editorial-card:nth-child(1){grid-column:span 2;min-height:520px}}
 @media(max-width:600px){.editorial{grid-template-columns:1fr;gap:16px}.editorial-card,.editorial-card:nth-child(1),.editorial-card:nth-child(2),.editorial-card:nth-child(3),.editorial-card:nth-child(4),.editorial-card:nth-child(5){grid-column:span 1;min-height:440px;border-radius:23px;padding:26px}.editorial-card:nth-child(1){min-height:530px}.editorial-card h3,.editorial-card:nth-child(n+3) h3{font-size:clamp(38px,10vw,54px)}.editorial-card:after{inset:8px;border-radius:17px}}
 @media(prefers-reduced-motion:reduce){.editorial-card,.editorial-card a{transition:none}.editorial-card:hover{transform:none}}
+
+/* Hero layout QA: keep full headline visible and UI clear of the model's face */
+html,body{max-width:100%;overflow-x:clip}
+.hero{box-sizing:border-box;width:100%;max-width:100%;grid-template-columns:minmax(0,1fr);padding:clamp(32px,5vw,76px) clamp(20px,5vw,88px);overflow:hidden}
+.hero-copy{position:relative;z-index:4;box-sizing:border-box;width:min(100%,560px);max-width:calc(100vw - 40px);min-width:0;padding:clamp(24px,3vw,42px);margin:0;transform:none}
+.hero h1{font-size:clamp(54px,7.5vw,110px);letter-spacing:-.065em;line-height:.94;overflow-wrap:normal;white-space:normal;max-width:100%;margin:24px 0}
+.hero-art{inset:0 0 0 32%;background-position:center,center,center 35%}
+.hero .tile-one{top:8%;left:auto;right:7%;transform:none}
+.hero .tile-two{bottom:10%;right:6%}
+@media(min-width:801px) and (max-width:1150px){.hero-copy{width:min(49vw,490px)}.hero h1{font-size:clamp(54px,7vw,82px)}.hero .tile-one{right:4%;top:7%}}
+@media(max-width:800px){.hero{display:flex;align-items:flex-end;min-height:760px;padding:36px 5% 56px}.hero-art{inset:0;background-position:center,58% 25%}.hero-copy{width:100%;max-width:560px;padding:25px}.hero h1{font-size:clamp(54px,12vw,88px)}.hero .floating-tile,.hero .vertical{display:none}}
+@media(max-width:480px){.hero{min-height:680px;padding:24px 16px 36px}.hero-copy{max-width:100%;padding:20px}.hero h1{font-size:clamp(49px,13vw,68px);letter-spacing:-.055em}.hero-art{background-position:center,60% 22%}}
